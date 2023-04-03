@@ -142,24 +142,12 @@
 					<wtpContextName>maven-web-application</wtpContextName>
 				</configuration>
 			</plugin>
-                            <pluginGroups>
-                                    <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
-                            </pluginGroups>
-                        <profiles>
-                             <profile>
-                                      <id>admin</id>
-                               <activation>
-                                      <activeByDefault>true</activeByDefault>
-                               </activation>
-                              <properties>
-                                      <!-- Optional URL to server. Default value is http://localhost:9000 -->
-                                      <sonar.host.url>
-                                                  http://http://ec2-15-206-147-152.ap-south-1.compute.amazonaws.com:9000/
-                                      </sonar.host.url>
-                              </properties>
-                             </profile>
-                       </profiles>
-                      
+                        <plugin>
+                                <groupId>org.sonarsource.scanner.maven</groupId>
+                                <artifactId>sonar-maven-plugin</artifactId>
+                                <version>3.7.0.1746</version>
+                        </plugin>
+             
 			
 </plugins>
 	</build>
