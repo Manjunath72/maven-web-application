@@ -148,14 +148,14 @@
                             </pluginGroups>
                         <profiles>
                              <profile>
-                                      <id>sonar</id>
+                                      <id>admin</id>
                                <activation>
                                       <activeByDefault>true</activeByDefault>
                                </activation>
                               <properties>
                                       <!-- Optional URL to server. Default value is http://localhost:9000 -->
                                       <sonar.host.url>
-                                                  http://myserver:9000
+                                                  http://http://ec2-15-206-147-152.ap-south-1.compute.amazonaws.com:9000/
                                       </sonar.host.url>
                               </properties>
                              </profile>
