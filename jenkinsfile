@@ -3,6 +3,7 @@ pipeline {
      agent any
      tools {
         maven 'maven3.9.1'
+        sonarqube 'sonarqube9.6.1.59531'
 
      }
      stages{
