@@ -3,7 +3,6 @@ pipeline {
      agent any
      tools {
         maven 'maven3.9.1'
-        sonarqube 'sonarqube9.6.1.59531'
 
      }
      stages{
@@ -38,7 +37,7 @@ pipeline {
             steps{
                 script{
                     withSonarQubeEnv(credentialsId: 'sonar-latest') {
-                    sh 'mvn clean package sonar:sonar'
+                    sh 'mvn sonar:sonar'
                  }
                 }
             }
