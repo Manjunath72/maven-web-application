@@ -142,7 +142,6 @@
 					<wtpContextName>maven-web-application</wtpContextName>
 				</configuration>
 			</plugin>
-			<settings>
                             <pluginGroups>
                                     <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
                             </pluginGroups>
@@ -160,7 +159,7 @@
                               </properties>
                              </profile>
                        </profiles>
-                       </settings>
+                      
 			
 </plugins>
 	</build>
