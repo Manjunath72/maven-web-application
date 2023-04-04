@@ -1,0 +1,46 @@
+pipeline {
+     
+     agent any
+     tools { 
+        maven 'maven3.9.1' 
+        
+     }
+     stages{
+     
+         stage('Git Checkout'){
+
+            steps{
+               git branch:'main', url:'https://github.com/Manjunath72/demo-counter-app.git'
+            }
+         }
+         stage('UNIT Testing'){
+
+            steps{
+               sh 'mvn test'
+            }
+         }
+         stage('Integration Testing'){
+
+            steps{
+               sh 'mvn verify -DskipUnitTests'
+            }
+         }
+         stage('Maven Build'){
+
+            steps{
+               sh 'mvn clean install'
+            }
+         }
+         stage('SonarQube analysis'){
+            
+            steps{
+                script{
+                    withSonarQubeEnv(credentialsId: 'sonar-credit') {
+                    sh 'mvn clean package sonar:sonar'
+                 }
+                }
+            }  
+         }    
+     }
+}
+
