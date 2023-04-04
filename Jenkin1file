@@ -10,7 +10,7 @@ pipeline {
          stage('Git Checkout'){
 
             steps{
-               git branch:'main', url:'https://github.com/Manjunath72/demo-counter-app.git'
+               git branch:'master', url:'https://github.com/Manjunath72/maven-web-application.git'
             }
          }
          stage('UNIT Testing'){
@@ -35,7 +35,7 @@ pipeline {
             
             steps{
                 script{
-                    withSonarQubeEnv(credentialsId: 'sonar-credit') {
+                    withSonarQubeEnv(credentialsId: 'sonarkey') {
                     sh 'mvn clean package sonar:sonar'
                  }
                 }
