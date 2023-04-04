@@ -31,14 +31,11 @@ pipeline {
                sh 'mvn clean install'
             }
          }
-         stage('SonarQube analysis'){
-            
+          stage('ExecuteSonarQubeReport'){
             steps{
-                script{
-                    withSonarQubeEnv(credentialsId: 'sonarkey') {
-                    sh 'mvn clean package sonar:sonar'
-                 }
-                }
+               sh  "mvn clean sonar:sonar"
+            }
+           }
             }  
          }    
      }
