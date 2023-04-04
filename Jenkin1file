@@ -32,11 +32,13 @@ pipeline {
             }
          }
          stage('ExecuteSonarQubeReport'){
+         
             steps{
                sh  "mvn clean sonar:sonar"
             }
           }
           stage('UPLOAD ARTIFACTS TO NEXUS'){
+          
              steps{
                sh  "mvn clean deploy"
              }
