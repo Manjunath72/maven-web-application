@@ -93,13 +93,13 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>deployment1</name>
+	      <name>deployment-1</name>
 	      <url>http://ec2-3-110-137-95.ap-south-1.compute.amazonaws.com:8081/repository/deployment-1</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>deployment1</name>
+	      <name>deployment-1</name>
 	      <url>http://ec2-3-110-137-95.ap-south-1.compute.amazonaws.com:8081/repository/deployment-1</url>
 	    </snapshotRepository>
 	    
