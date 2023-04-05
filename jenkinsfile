@@ -45,8 +45,10 @@ stages{
   
   stage("deploy to tomcat dev server"){
             steps{
+	        script{
                  sshagent(['tomcatkey']) {
-                sh "deploy adapters: [tomcat8(credentialsId: 'tomcatkey', path: '', url: 'http://ec2-43-205-238-213.ap-south-1.compute.amazonaws.com:8080')], contextPath: null, war: '**/*.war'
+                 sh "deploy adapters: [tomcat8(credentialsId: 'tomcatkey', path: '', url: 'http://ec2-43-205-238-213.ap-south-1.compute.amazonaws.com:8080')], contextPath: null, war: '**/*.war'
+                } 
   }
   }
   }
