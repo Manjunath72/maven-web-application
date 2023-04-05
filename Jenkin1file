@@ -41,10 +41,10 @@ pipeline {
                      ], 
                      credentialsId: 'nexuskey', 
                      groupId: 'com.mt', 
-                     nexusUrl: 'http://ec2-65-0-56-205.ap-south-1.compute.amazonaws.com:8081/', 
+                     nexusUrl: 'http://ec2-65-0-56-205.ap-south-1.compute.amazonaws.com:8081/repository/maven-snapshots/', 
                      nexusVersion: 'nexus3', 
                      protocol: 'http',
-                     repository: 'deployment-1', 
+                     repository: 'maven-snapshots', 
                      version: ' 1.0.0'
                }
              }
