@@ -93,14 +93,14 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>deployment-1</name>
-	      <url>http://ec2-65-0-56-205.ap-south-1.compute.amazonaws.com:8081/</url>
+	      <name>maven-snapshots</name>
+	      <url>http://ec2-65-0-56-205.ap-south-1.compute.amazonaws.com:8081/repository/maven-snapshots/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>deployment-1</name>
-	      <url>http://ec2-65-0-56-205.ap-south-1.compute.amazonaws.com:8081/</url>
+	      <name>maven-snapshot</name>
+	      <url>http://ec2-65-0-56-205.ap-south-1.compute.amazonaws.com:8081/repository/maven-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
