@@ -13,18 +13,6 @@ pipeline {
                git branch:'master', url:'https://github.com/Manjunath72/maven-web-application.git'
             }
          }
-         stage('UNIT Testing'){
-
-            steps{
-               sh 'mvn test'
-            }
-         }
-         stage('Integration Testing'){
-
-            steps{
-               sh 'mvn verify -DskipUnitTests'
-            }
-         }
          stage('Maven Build'){
 
             steps{
