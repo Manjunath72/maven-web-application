@@ -100,7 +100,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>deployment1</name>
-	      <url>http://ec2-3-110-137-95.ap-south-1.compute.amazonaws.com:8081/repository/deployment-1//repository/deployment-1</url>
+	      <url>http://ec2-3-110-137-95.ap-south-1.compute.amazonaws.com:8081/repository/deployment-1</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
