@@ -45,7 +45,7 @@ stages{
   stage("deploy to tomcat dev server"){
             steps{
 	        script{
-		 sshagent(['bfe1b3c1-c29b-4a4d-b97a-c068b7748cd0']) {
+		 sshagent(['tomcat_deploy']) {
                  sh "deploy adapters: [tomcat8(credentialsId: 'tomcatkey', path: '', url: 'http://http://ec2-13-127-32-97.ap-south-1.compute.amazonaws.com:8080')], contextPath: null, war: 'target/maven-web-application.war'
                 } 
   }
