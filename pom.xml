@@ -97,12 +97,6 @@
 	      <url>http:ec2-3-110-149-204.ap-south-1.compute.amazonaws.com:8081/repository/maven-snapshots/</url>
 	    </repository>
 	    
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>maven-snapshot</name>
-	      <url>http://ec2-3-110-149-204.ap-south-1.compute.amazonaws.com:8081/repository/maven-snapshots/</url>
-	    </snapshotRepository>
-	    
 	</distributionManagement>
 	
 	<build>
