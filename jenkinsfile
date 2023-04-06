@@ -42,7 +42,7 @@ stages{
   }
   }
   
-  stage("deploy to tomcat dev server"){
+  stage('deploy to tomcat dev server'){
             steps{
 	        script{
 		 sshagent(['tomcat_deploy']) {
