@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+   - name: Download the package from Nexus
+     command: 'wget --user=admin --password=yatharv@19 -c "http://3http://ec2-3-110-95-139.ap-south-1.compute.amazonaws.com:8081/repository/maven-web-application/.war" -O webapp.war'
+     args:
+       chdir: /opt/tomcat8/webapps
