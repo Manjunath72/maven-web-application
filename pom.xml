@@ -93,7 +93,7 @@
 	
 	    <repository>
 	      <id>admin</id>
-	      <name>maven-we-application</name>   
+	      <name>maven-web-application</name>   
 	      <url>http://ec2-3-110-95-139.ap-south-1.compute.amazonaws.com:8081/repository/maven-web-application/</url>
 	    </repository>
 	    
