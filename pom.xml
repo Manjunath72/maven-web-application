@@ -17,9 +17,6 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://ec2-15-206-82-51.ap-south-1.compute.amazonaws.com:9000/</sonar.host.url>
-		<sonar.login>admin</sonar.login>
-		<sonar.password>yatharv@19</sonar.password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -94,7 +91,7 @@
 	    <repository>
 	      <id>admin</id>
 	      <name>maven-web-application</name>   
-	      <url>http://ec2-3-110-95-139.ap-south-1.compute.amazonaws.com:8081/repository/maven-web-application/</url>
+	      <url>http://ec2-52-66-217-231.ap-south-1.compute.amazonaws.com:8081/repository/maven-web-application/</url>
 	    </repository>
 	    
 	</distributionManagement>
